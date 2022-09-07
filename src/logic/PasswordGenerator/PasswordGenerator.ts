@@ -4,7 +4,7 @@ export class PasswordGenerator {
 	length: number;
 	characters: string[];
 
-	constructor(length: number, characters: string[] = [CharacterType.Lowercase]) {
+	constructor(length: number, characters: CharacterType[] = [CharacterType.Lowercase]) {
 		this.length = length;
 		this.characters = characters.join("").split("");
 	}

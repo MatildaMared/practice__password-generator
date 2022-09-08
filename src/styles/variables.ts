@@ -6,6 +6,7 @@ const Variables = createGlobalStyle`
     --color-background-lighter: hsla(247, 11%, 15%, 1.0);
     --color-text: hsla(252, 11%, 91%, 1.0);
     --color-text-darker: hsla(251, 9%, 53%, 1.0);
+    --color-primary: #A4FFAF;
   }
 `;
 

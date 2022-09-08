@@ -1,9 +1,10 @@
 import {useState} from "react";
 import styled from "styled-components";
 import PasswordContainer from "./components/PasswordContainer";
+import {Password} from "./interfaces/Password";
 
 function App() {
-	const [password, setPassword] = useState("example123");
+	const [password, setPassword] = useState(Password.Initial);
 
 	return (
 		<Container>

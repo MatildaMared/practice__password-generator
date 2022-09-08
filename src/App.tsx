@@ -1,12 +1,21 @@
 import {useState} from "react";
+import styled from "styled-components";
 
 function App() {
 
 	return (
-		<div className="App">
-			<h1>Password Generator</h1>
-		</div>
+		<Container>
+			<h1 className="heading-medium">Password Generator</h1>
+		</Container>
 	);
 }
+
+const Container = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
 export default App;

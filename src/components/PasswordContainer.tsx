@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import iconCopyUrl from "../assets/images/icon-copy.svg";
+import {copyToClipboard} from "../utils/copyToClipboard";
 
 interface Props {
 	password: string;
@@ -9,7 +10,9 @@ function PasswordContainer({password}: Props) {
 	return (
 		<Container>
 			<h2 className="heading-large">{password}</h2>
-			<img src={iconCopyUrl} alt="Copy"/>
+			<Button onClick={() => copyToClipboard(password)}>
+				<img src={iconCopyUrl} alt="Copy"/>
+			</Button>
 		</Container>
 	);
 }
@@ -22,6 +25,16 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+`;
+
+const Button = styled.button`
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
 `;
 
 export default PasswordContainer;

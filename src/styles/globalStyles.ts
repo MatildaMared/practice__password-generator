@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    background-color: var(--color-background);
     font-family: "JetBrains Mono", monospace;
   }
 `;

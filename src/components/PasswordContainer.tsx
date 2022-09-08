@@ -31,9 +31,15 @@ const Button = styled.button`
   border: none;
   background: transparent;
   cursor: pointer;
+  padding: 4px;
 
   &:hover {
     opacity: 0.5;
+  }
+
+  &:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
   }
 `;
 

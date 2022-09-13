@@ -5,6 +5,10 @@ import { Password } from "./interfaces/Password";
 
 function App() {
 	const [password, setPassword] = useState(Password.Initial);
+	const [includeLowercaseLetters, setIncludeLowercaseLetters] = useState(false);
+	const [includeUppercaseLetters, setIncludeUppercaseLetters] = useState(false);
+	const [includeNumbers, setIncludeNumbers] = useState(false);
+	const [includeSymbols, setIncludeSymbols] = useState(false);
 
 	return (
 		<Container>
